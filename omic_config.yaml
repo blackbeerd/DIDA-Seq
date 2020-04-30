@@ -1,0 +1,4 @@
+barcodes:
+  data/snakemake_pipeline_NovaSeq_8bp_barcodes.txt
+ref_genome:
+  /home/groups/CEDAR/anno/DIDA/human_g1k_v37.fasta
