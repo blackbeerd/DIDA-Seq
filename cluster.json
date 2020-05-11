@@ -41,5 +41,117 @@
         "o" : "logs/bwa/bwa_%j.out",
         "c" : 8,
         "mem" : 20000
+    },
+    "sort" :
+    {
+        "J" : "sort",
+        "e" : "logs/sort/sort_%j.err",
+        "o" : "logs/sort/sort_%j.out",
+        "c" : 1,
+        "mem" : 40000
+    },
+    "add_readgroups" :
+    {
+        "J" : "add_readgroups",
+        "e" : "logs/add_readgroups/add_readgroups_%j.err",
+        "o" : "logs/add_readgroups/add_readgroups_%j.out",
+        "c" : 1,
+        "mem" : 40000
+    },
+    "index" :
+    {
+        "J" : "index",
+        "e" : "logs/index/index_%j.err",
+        "o" : "logs/index/index_%j.out",
+        "c" : 1,
+        "mem" : 20000
+    },
+    "consensus" :
+    {
+        "J" : "consensus",
+        "e" : "logs/consensus/consensus_%j.err",
+        "o" : "logs/consensus/consensus_%j.out",
+        "c" : 3,
+        "mem" : 40000
+    },
+    "no_num" :
+    {
+        "J" : "no_num",
+        "e" : "logs/no_num/no_num_%j.err",
+        "o" : "logs/no_num/no_num_%j.out",
+        "c" : 1,
+        "mem" : 20000
+    },
+    "align_sscs" :
+    {
+        "J" : "align_sscs",
+        "e" : "logs/align_sscs/align_sscs_%j.err",
+        "o" : "logs/align_sscs/align_sscs_%j.out",
+        "c" : 2,
+        "mem" : 40000
+    },
+    "sort_sscs" :
+    {
+        "J" : "sort_sscs",
+        "e" : "logs/sort_sscs/sort_sscs_%j.err",
+        "o" : "logs/sort_sscs/sort_sscs_%j.out",
+        "c" : 1,
+        "mem" : 40000
+    },
+    "index_sscs" :
+    {
+        "J" : "index_sscs",
+        "e" : "logs/index_sscs/index_sscs_%j.err",
+        "o" : "logs/index_sscs/index_sscs_%j.out",
+        "c" : 1,
+        "mem" : 40000
+    },
+    "add_readgroups_sscs" :
+    {
+        "J" : "add_readgroups_sscs",
+        "e" : "logs/add_readgroups_sscs/add_readgroups_sscs_%j.err",
+        "o" : "logs/add_readgroups_sscs/add_readgroups_sscs_%j.out",
+        "c" : 1,
+        "mem" : 40000
+    },
+    "index_readgroups" :
+    {
+        "J" : "index_readgroups",
+        "e" : "logs/index_readgroups/index_readgroups_%j.err",
+        "o" : "logs/index_readgroups/index_readgroups_%j.out",
+        "c" : 1,
+        "mem" : 40000
+    },
+    "clipreads" :
+    {
+        "J" : "clipreads",
+        "e" : "logs/clipreads/clipreads_%j.err",
+        "o" : "logs/clipreads/clipreads_%j.out",
+        "c" : 1,
+        "mem" : 40000
+    },
+    "clip_overlap" :
+    {
+        "J" : "clip_overlap",
+        "e" : "logs/clip_overlap/clip_overlap_%j.err",
+        "o" : "logs/clip_overlap/clip_overlap_%j.out",
+        "c" : 1,
+        "mem" : 40000
+    },
+    "index_complete" :
+    {
+        "J" : "index_complete",
+        "e" : "logs/index_complete/index_complete_%j.err",
+        "o" : "logs/index_complete/index_complete_%j.out",
+        "c" : 1,
+        "mem" : 40000
+    },
+    "reheader" :
+    {
+        "J" : "reheader",
+        "e" : "logs/reheader/reheader_%j.err",
+        "o" : "logs/reheader/reheader_%j.out",
+        "c" : 1,
+        "mem" : 40000
     }
 }

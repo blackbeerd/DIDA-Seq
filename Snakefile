@@ -13,12 +13,14 @@ timestamp = ('{:%Y-%m-%d_%H:%M:%S}'.format(datetime.datetime.now()))
 
 configfile:"omic_config.yaml" 
 
+# Define demultiplexing workflow as subworkflow to this, so it is executed first
 subworkflow demultiplex:
     snakefile:
         "demultiplex_Snakefile"
     configfile:
         "omic_config.yaml"
 
+# Read in barcode file to define sample names as wildcards
 md = open(config['barcodes'], "r")
 lines = md.readlines()
 
@@ -27,6 +29,9 @@ for x in lines:
     SAMPLES.append(x.split('\t')[0])
 md.close()
 
+# Variables
+num_pcr = config['num_pcr']
+read_ext = ['r1','r2']
 
 with open('cluster.json') as json_file:
     json_dict = json.load(json_file)
@@ -48,7 +53,7 @@ for sample in SAMPLES:
 
 rule all:
     input:
-        expand("samples/bwa/{sample}.pe.sam", sample = SAMPLES)
+        expand("samples/mutect2/{sample}.reheadered.bam", sample = SAMPLES)
 
 include: "rules/DIDA.smk"
-
+include: "rules/Mutect2.smk"

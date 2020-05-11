@@ -2,3 +2,11 @@ barcodes:
   data/snakemake_pipeline_NovaSeq_8bp_barcodes.txt
 ref_genome:
   /home/groups/CEDAR/anno/DIDA/human_g1k_v37.fasta
+consensus_maker:
+  executables/bp_consensusmaker_v3.2.py
+num_pcr:
+  3
+gd_cutoff:
+  0.7
+gd_Ncutoff:
+  0.9
