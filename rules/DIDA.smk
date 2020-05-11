@@ -49,7 +49,6 @@ rule consensus:
         r1 = "samples/consensus/{sample}.sscs.{num_pcr}pcr.r1.fq",
         r2 = "samples/consensus/{sample}.sscs.{num_pcr}pcr.r2.fq"
     params:
-        consensus_maker = config["consensus_maker"],
         num_pcr = config["num_pcr"],
         gd_cutoff = config["gd_cutoff"],
         gd_Ncutoff = config["gd_Ncutoff"]
