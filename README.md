@@ -64,7 +64,7 @@ $ cp /path/to/data/* samples/raw
 
 ## Launch workflow
 
-To test that your workflow is set up correctly, you can do a "dry-run" of your snakemake workflow, which will create a Directed Acyclic Graph (DAG) of every job that will be launched in the workflow. If there are any syntactic errors, they will be reported here.
+To test that your workflow is set up correctly, you can do a "dry-run" of your snakemake workflow, which will create a Directed Acyclic Graph (DAG) of every job that will be launched in the workflow. If there are any syntactical errors, they will be reported here.
 
 ```
 $ snakemake -np --verbose
@@ -73,5 +73,5 @@ $ snakemake -np --verbose
 If the dry-run looks good, then you can launch the workflow with this command:
 
 ```
-sbatch submit_snakemake.sh
+$ sbatch submit_snakemake.sh
 ```
