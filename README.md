@@ -1,4 +1,4 @@
-# DIDA
+# DIDA-Seq
 
 ## Organization
 
